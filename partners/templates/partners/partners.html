@@ -1,8 +1,33 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 <div class="container">
-    <h2>Welcome to Earth Science Outreach</h2>
-    <p>This is the patners page.</p>
+    <img src="{% static 'media/images/patron/partners.jpg' %}" 
+        alt="Yorkshire Fossil Festival Group Photo 2019" class="img-fluid mb-3"/>
+    <h2>Partners</h2>
+    <p>During our professional work and whilst organising the Yorkshire Fossil Festival (since 2014), 
+        we have developed a wide network of supportive partner organisations and talented individuals 
+        in the UK and Internationally. The list is long and prestigious: see below for some selected 
+        highlights of our previous Partners, Patrons, Funders and Distinguished Speakers</p>
+
+        <p>
+            List of Significant Partners: The British Geological Survey (BGS), Oxford Natural History 
+            Museum (Pitt Rivers Museum), Redcar & Cleveland Borough Council, Anglo-American Mining 
+            Company, Arts Council England, Universities of Leeds, Sheffield, Hull, Bristol and 
+            Portsmouth, Dinosaur Isle Museum (Isle of Wight), Yorkshire Geologists Society, Whitby 
+            Museum, the Palaeontological Association, Whitby Town Council, Geological Association, 
+            Rotunda Museum & Rotunda Geology Group, Let’s Circus, Scarbarough Museums Group, Yorkshire 
+            Coast BID.
+        </p>
+        <h3>Patrons</h3>
+        <img src="{% static 'media/images/patron/chris-jackson-768x432.jpg' %}" 
+            alt="Professor Chris Jackson" class="img-fluid mb-3"/>
+        <p>
+            <a href="https://www.rigb.org/explore-science/explore/person/chris-jackson" target="_blank">
+                Professor Chris Jackson</a>Volcanologist, Seismologist and BBC Presenter. Advocate and role 
+            model for BAME scientists. Chris has agreed to help develop our Charity and communicate our
+            aims to the wider public.
+        </p>
 </div>
 {% endblock %}
