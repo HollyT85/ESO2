@@ -57,25 +57,25 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'home:home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Mission</a>
+          <a class="nav-link" href="{% url 'mission:mission' %}">Our Mission</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Partners</a>
+          <a class="nav-link" href="{% url 'partners:partners' %}">Partners</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Meet the Team</a>
+          <a class="nav-link" href="{% url 'team:team' %}">Meet the Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Upcoming Events</a>
+          <a class="nav-link" href="{% url 'events:events' %}">Upcoming Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Safeguarding</a>
+          <a class="nav-link" href="{% url 'safeguarding:safeguarding' %}">Safeguarding</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="{% url 'contact:contact' %}">Contact Us</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
