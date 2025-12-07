@@ -60,9 +60,6 @@
           <a class="nav-link" aria-current="page" href="{% url 'home:home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{% url 'events:events' %}">Events</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="{% url 'mission:mission' %}">Our Mission</a>
         </li>
         <li class="nav-item">
@@ -73,9 +70,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'events:events' %}">Upcoming Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'safeguarding:safeguarding' %}">Safeguarding</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'contact:contact' %}">Contact Us</a>
@@ -106,7 +100,9 @@
             </p>
         </div>
         <div class="col-4">
-            
+         
+          <a class="nav-link" href="{% url 'safeguarding:safeguarding' %}">Safeguarding</a>
+         
         </div>
         <div class="col-4">
             <p class="m-0 text-center text-white">
