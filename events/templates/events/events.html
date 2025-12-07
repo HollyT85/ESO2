@@ -1,8 +1,20 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 <div class="container">
-    <h2>Welcome to Earth Science Outreach</h2>
-    <p>This is the events page.</p>
+    <h2>Events</h2>
+<div>
+    <img src="{% static 'media/images/carousel/IMG_2649.jpeg' %}" alt="Staithes" style="width:50%; height:auto;">
+</div>
+
+<div>
+    <h3>Upcoming Events</h3>
+    <ul>
+        No Events Scheduled <br>
+        Check Back Later!
+    </ul>
+</div>
+    
 </div>
 {% endblock %}
