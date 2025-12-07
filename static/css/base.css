@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: yellow; */
 }
 
 body {
@@ -39,21 +40,39 @@ h1 .navbar-brand:hover{
 .navbar-nav .nav-link {
     text-decoration: none !important;
     color: #EFD199 !important;
+    font-family: "Indie Flower", cursive;
 }
 
 .navbar-nav .nav-link:hover {
     color: #CE8F5A !important;
 }
 
-.navbar-nav .nav-link.active {
+/* .navbar-nav .nav-link.active {
     color: pink !important;
     font-weight: bold;
-}
+} */
 
 ul li a:hover{
     color: pink;
 }
 
+.bottom-nav {
+    background-color: #6287A2;
+    color: #5EC0CA;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+
+}
+
+.bottom-nav a {
+    color: #5EC0CA;
+    text-decoration: none !important;
+}   
+
+.bottom-nav a:hover {
+    color:#CE8F5A;
+}
 
 main {
     min-height: calc(100vh - 120px);
