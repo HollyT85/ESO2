@@ -13,19 +13,47 @@ body {
 }
 
 header {
-    background-color: #2c3e50;
+    background-color: #6287A2;
     color: white;
     padding: 1rem;
 }
 
-header nav h1 {
-    font-size: 1.5rem;
+h1 .navbar-brand{
+    font-size: 2rem;
     font-family: "Indie Flower", cursive;
-    font-weight: 400;
+    font-weight: 1000;
     font-style: normal;
+    color: #80C8BC !important
     }
 
+h1 .navbar-brand:hover{
+    color: #5EC0CA !important
 }
+
+.fa-hill-rockslide {
+    color: #EFD199 !important;
+}
+
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    text-decoration: none !important;
+    color: #EFD199 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #CE8F5A !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: pink !important;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: pink;
+}
+
 
 main {
     min-height: calc(100vh - 120px);
@@ -43,4 +71,9 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+.active{
+    color: pink;
+    font-weight: bold;
 }
