@@ -2,7 +2,20 @@
 
 {% block content %}
 <div class="container">
-    <h2>Welcome to Earth Science Outreach</h2>
-    <p>This is the contact page.</p>
+    <h2>Contact Us</h2>
+    <form>
+  <div class="mb-3">
+     <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Human Check</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>
 {% endblock %}
