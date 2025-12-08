@@ -13,5 +13,6 @@ def work(request):
     """Mission page view"""
     return render(request, 'mission/work.html')
 
-"""Mission page view"""
+def gallery(request):
+    """Mission page view"""
     return render(request, 'mission/gallery.html')
