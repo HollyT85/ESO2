@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container"> 
+<h3>Our Goals</h3>
+<a href="{% url 'mission:work' %}"><i class="fa-solid fa-bone"></i> Previous Work</a>
+<a href="{% url 'mission:mission' %}"><i class="fa-solid fa-children"></i>Our Mission</a>
+<a href="{% url 'mission:gallery' %}"><i class="fa-solid fa-camera"></i>Gallery</a>
+        
+</div>
+{% endblock %}
