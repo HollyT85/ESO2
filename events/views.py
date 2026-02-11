@@ -12,3 +12,15 @@ def upcoming(request):
 def previous(request):
     """Events page view"""
     return render(request, 'events/previous.html')
+
+def fossilfest(request):
+    """Events page view"""
+    return render(request, 'events/fossilfest.html')
+
+def staithes(request):
+    """Events page view"""
+    return render(request, 'events/staithes.html')
+
+def redcar(request):
+    """Events page view"""
+    return render(request, 'events/redcar.html')
