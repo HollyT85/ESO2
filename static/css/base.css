@@ -4,17 +4,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: yellow; */
-    font-family: "Rubik", system-ui;
-  font-weight: 400;
-  font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Rubik", system-ui, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #F6F1E8;  /* soft cream */
 }
+
+.custom-navbar {
+    background-color: #6287A2 !important;
+}
+
+/* Home page carousel spacing */
+#carouselExample {
+    margin-bottom: 2rem; 
+}
+
+
 
 header {
     background-color: #6287A2;
