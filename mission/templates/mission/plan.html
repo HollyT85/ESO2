@@ -5,15 +5,17 @@
 <div class="container"> 
 <h3>Our Goals</h3>
 <section>
+
+        <a class="sub" href="{% url 'mission:mission' %}">
+        <img class="circlephoto" src="{% static 'media/images/general/banner.jpg'%}" alt="Children enjoying rock activities">
+        Our Mission
+    </a>
+
     <a class="sub" href="{% url 'mission:work' %}">
         <img class="circlephoto" src="{% static 'media/images/general/whitbymuseum.jpg'%}" alt="Whitby Museum">
         Previous Work
     </a>
 
-    <a class="sub" href="{% url 'mission:mission' %}">
-        <img class="circlephoto" src="{% static 'media/images/general/banner.jpg'%}" alt="Children enjoying rock activities">
-        Our Mission
-    </a>
 
     <a class="sub" href="{% url 'mission:gallery' %}">
         <img class="circlephoto" src="{% static 'media/images/general/performers.jpg'%}" alt="Performers with the YFF banner">

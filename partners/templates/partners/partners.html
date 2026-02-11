@@ -4,10 +4,20 @@
 {% block content %}
 <div class="container">
     <h2>Partners</h2>
+
+    <section>
+    <a class="sub" href="{% url 'partners:patrons' %}">
+        <img class="circlephoto" src="{% static 'media/images/general/whitbymuseum.jpg'%}" alt="Whitby Museum">
+        Patrons
+    </a>
+
+    <a class="sub" href="{% url 'partners:significantpartners' %}">
+        <img class="circlephoto" src="{% static 'media/images/general/banner.jpg'%}" alt="Children enjoying rock activities">
+        Partners
+    </a>
+</section>
     
         
-       <a href="{% url 'partners:patrons' %}"><i class="fa-solid fa-volcano"></i> Patrons</a>
-       <a href="{% url 'partners:significantpartners' %}"><i class="fa-solid fa-earth-europe"></i> Significant Partners</a>
-        <a href="{% url 'partners:selectedpartners' %}"><i class="fa-solid fa-building-columns"></i> Selected Partners</a>
+     
 </div>
 {% endblock %}
