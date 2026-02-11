@@ -141,3 +141,8 @@ section p {
         margin-bottom: 2rem;  /* space between stacked items */
     }
 }
+
+.carousel-item img {
+    border-radius: 5%;
+    border: black 1px solid;
+}

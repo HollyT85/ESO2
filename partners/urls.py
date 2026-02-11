@@ -10,5 +10,4 @@ urlpatterns = [
     path('', views.partners, name='partners'),
     path('patrons', views.patrons, name='patrons'),
     path('significantpartners', views.sig, name='significantpartners'),
-    path('selectedpartners', views.selected, name='selectedpartners')
 ]

@@ -13,6 +13,4 @@ def sig(request):
     """Partners page view"""
     return render(request, 'partners/significantpartners.html')
 
-def selected(request):
-    """Partners page view"""
-    return render(request, 'partners/selectedpartners.html')
+
