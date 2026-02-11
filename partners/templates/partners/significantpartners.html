@@ -3,48 +3,60 @@
 
 {% block content %}
 <div class="container"> 
-    <a href = "{% url 'team:team' %}"><i class="fa-solid fa-left-long"></i></a>
-    <h1 class="headings"> Partners </h1>
-    <img src="{% static 'media/images/patron/partners.jpg' %}" 
-        alt="Partner Image" class="img-fluid mb-3"/>
+    <a href="{% url 'team:team' %}"><i class="fa-solid fa-left-long"></i></a>
     
-    <p>During our professional work and whilst organising the Yorkshire Fossil Festival (since 2014), 
-        we have developed a wide network of supportive partner organisations and talented individuals 
-        in the UK and internationally. The list is long and prestigious!</p>
+    <h1 class="headings text-center mb-4">Partners</h1>
 
-        <p>
-            List of Significant Partners: The British Geological Survey (BGS), Oxford Natural History 
-            Museum (Pitt Rivers Museum), Redcar & Cleveland Borough Council, Anglo-American Mining 
-            Company, Arts Council England, Universities of Leeds, Sheffield, Hull, Bristol and 
-            Portsmouth, Dinosaur Isle Museum (Isle of Wight), Yorkshire Geologists Society, Whitby 
-            Museum, The Palaeontological Association, Whitby Town Council, Geological Association, 
-            Rotunda Museum & Rotunda Geology Group, Let’s Circus, Scarborough Museums Group, Yorkshire 
-            Coast BID.
-        </p>
-</div>
-<div>
-    <h3>Selected Partners</h3>
-        <p>
-            <a href="https://www.bgs.ac.uk/" target="_blank">The British Geological Survey </a>have sent volunteer
-             experts to provide interactive education activities for kids and adults. Including a giant
-              map of the Yorkshire Wolds to use as a visual aid to learn about significant historic and
-               Earth Science related features in the local area (2 images above). Rose Want (BGS Public 
-               Engagement Officer) is one of our Trustees and pictured below delivering an interactive 
-               workshop to kids at Yorkshire Fossil Festival.
-        </p>
-        <p>
-            <a href="https://www.prm.ox.ac.uk/" target="_blank">Oxford Natural History Museum (Pitt Rivers Museum)</a> – annual exhibit provider in 2024 
-            they provided an exhibit on the Kirkdale Cave (North York Moors), which was a crucial 
-            location in the history of Geology that helped found the concept of dating the Earth.
-        </p>
-        <p>
-            <a href="https://www.dinosaurisle.com/" target="_blank">Dinosaur Isle Museum – Isle of Wight</a> – are a significant contributor of internationally important displays of genuine British Dinosaur fossils, unparalleled by anything that is freely publicly available. A real treat for anyone attending our events!
-        </p>
-        <p>
-            We are also supported by the <a href="https://scarboroughmuseumsandgalleries.org.uk/visit/rotunda-museum/" target="_blank">Rotunda (Scarborough)</a>, 
-            <a href="https://whitbymuseum.org.uk/" target="_blank">Whitby</a> and <a href="https://www.yorkshiremuseum.org.uk/" target="_blank">Yorkshire Museums</a> who provide 
-            evening speaking venues, stalls, grounds and logistical support.
-        </p>
+    <!-- Centered image -->
+    <div class="text-center mb-4">
+        <img class="page-images" src="{% static 'media/images/patron/partners.jpg' %}" 
+             alt="Partner Image" class="img-fluid"/>
+    </div>
+
+    <!-- First heading centered -->
+    <h3 class="text-center mb-3">Significant Partners</h3>
+
+    <!-- Left-aligned paragraphs -->
+    <p>
+        During our professional work and whilst organising the Yorkshire Fossil Festival (since 2014), 
+        we have developed a wide network of supportive partner organisations and talented individuals 
+        in the UK and internationally. The list is long and prestigious!
+    </p>
+
+    <p>
+        List of Significant Partners: The British Geological Survey (BGS), Oxford Natural History 
+        Museum (Pitt Rivers Museum), Redcar & Cleveland Borough Council, Anglo-American Mining 
+        Company, Arts Council England, Universities of Leeds, Sheffield, Hull, Bristol and 
+        Portsmouth, Dinosaur Isle Museum (Isle of Wight), Yorkshire Geologists Society, Whitby 
+        Museum, The Palaeontological Association, Whitby Town Council, Geological Association, 
+        Rotunda Museum & Rotunda Geology Group, Let’s Circus, Scarborough Museums Group, Yorkshire 
+        Coast BID.
+    </p>
+
+    <!-- Second heading centered -->
+    <h3 class="text-center mt-5 mb-3">Selected Partners</h3>
+
+    <p>
+        <a href="https://www.bgs.ac.uk/" target="_blank">The British Geological Survey </a>have sent volunteer
+        experts to provide interactive education activities for kids and adults. Including a giant
+        map of the Yorkshire Wolds to use as a visual aid to learn about significant historic and
+        Earth Science related features in the local area (2 images above). Rose Want (BGS Public 
+        Engagement Officer) is one of our Trustees and pictured below delivering an interactive 
+        workshop to kids at Yorkshire Fossil Festival.
+    </p>
+    <p>
+        <a href="https://www.prm.ox.ac.uk/" target="_blank">Oxford Natural History Museum (Pitt Rivers Museum)</a> – annual exhibit provider in 2024, 
+        they provided an exhibit on the Kirkdale Cave (North York Moors), which was a crucial 
+        location in the history of Geology that helped found the concept of dating the Earth.
+    </p>
+    <p>
+        <a href="https://www.dinosaurisle.com/" target="_blank">Dinosaur Isle Museum – Isle of Wight</a> – are a significant contributor of internationally important displays of genuine British Dinosaur fossils, unparalleled by anything that is freely publicly available. A real treat for anyone attending our events!
+    </p>
+    <p>
+        We are also supported by the <a href="https://scarboroughmuseumsandgalleries.org.uk/visit/rotunda-museum/" target="_blank">Rotunda (Scarborough)</a>, 
+        <a href="https://whitbymuseum.org.uk/" target="_blank">Whitby</a> and <a href="https://www.yorkshiremuseum.org.uk/" target="_blank">Yorkshire Museums</a> who provide 
+        evening speaking venues, stalls, grounds and logistical support.
+    </p>
 
 </div>
 {% endblock %}
