@@ -174,9 +174,12 @@ section p {
 /* Trustee Layout */
 .trustee {
     display: flex;
-    align-items: flex-start;
+    align-items: center;      /* vertically center the image and text */
+    justify-content: center;   /* horizontally center content in the section */
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;      /* space before bottom border */
+    border-bottom: 2px solid black;  /* black line under each trustee */
 }
 
 /* Alternate layout */
@@ -196,6 +199,9 @@ section p {
     width: 180px;
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* center image in mobile view */
+    border: black 1px solid;
 }
 
 .trustee-text {
