@@ -8,4 +8,5 @@ app_name = 'team'
 
 urlpatterns = [
     path('', views.team, name='team'),
+    path('memoriam/', views.memoriam, name='memoriam'),
 ]
