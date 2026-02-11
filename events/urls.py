@@ -8,4 +8,8 @@ app_name = 'events'
 
 urlpatterns = [
     path('', views.events, name='events'),
+    path('upcoming', views.upcoming, name='upcoming'),
+    path('previous', views.previous, name='previous'),
+
+
 ]

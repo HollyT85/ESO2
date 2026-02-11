@@ -3,23 +3,55 @@
 
 {% block content %}
 <div class="container"> 
-<h1 class="headings">Our Goals</h1>
+<h1 class="headings">Our Mission</h1>
 <section>
+  <p>Founded as a registered UK charity (CIO) in April 2025, we exist to make Earth Science accessible 
+    to everyone.</p>
+        <p>We advance education in Geology, Meteorology, Oceanography, Physical Geography, and 
+            Environmental Science by opening doors to those who have traditionally been excluded from 
+            these fields — including young people, individuals without formal qualifications, and 
+            communities facing disadvantage. We connect communities with leading scientific and cultural 
+            institutions, creating pathways into lifelong learning, vocational opportunities, and 
+            meaningful engagement with the natural world.</p>
+        <p>Through public events, fieldwork, workshops, digital resources, and partnerships across the 
+            UK, we use Earth Science as a foundation for understanding our planet, responding to climate 
+            change, and building a more sustainable and equitable future.</p>
+             <p>Earth Science Outreach UK is built upon a team with over a decade of experience running the 
+    Yorkshire Fossil Festival (YFF), which has taken place in Whitby, Redcar, Hull, and Scarborough 
+    since 2014. Our work includes field trips to explore the fossil sites along Yorkshire’s stunning 
+    Jurassic coastline.</p>
+        
+        <p>Previously operating under the name GeoHeritage Rocks, we are now evolving into Earth Science 
+            Outreach UK (CIO), expanding our focus beyond Geology to encompass all Earth Science 
+            disciplines, including Climate Change.</p>
 
-        <a class="sub" href="{% url 'mission:mission' %}">
-        <img class="circlephoto" src="{% static 'media/images/general/banner.jpg'%}" alt="Children enjoying rock activities">
-        Our Mission
-    </a>
+        <p>In addition to the Yorkshire Fossil Festival, we have provided engaging workshops for children
+             at the Lyme Regis Fossil Festival and set up the “Rock Showman’s Booth”—an interactive venue
+              where visitors can learn about Earth’s history through displays and short presentations on
+               minerals, fossils, and other Earth Science topics. You can find videos of past talks and
+                interviews on our website.</p>
 
-    <a class="sub" href="{% url 'mission:work' %}">
-        <img class="circlephoto" src="{% static 'media/images/general/whitbymuseum.jpg'%}" alt="Whitby Museum">
-        Previous Work
-    </a>
+        <p>Looking ahead, we plan to apply for funding to expand our outreach efforts, offering 
+            year-round visits to schools and encouraging people to explore their local Earth History. F
+            or more information, see <a href = "{% url 'mission:mission' %}">Our Mission</a>.</p>
 
+        <p>In 20204, the Yorkshire Fossil Festival (held from May 25-27, 2024 in Redcar) welcomed over
+             17,000 visitors and featured interactive workshops, guest speakers, and information stands. 
+             The event highlighted leading organisations in Earth Science, such as the British Geological 
+             Survey. Check out <a href="{% url 'partners:partners' %}">Our Partners</a> for more details.</p>
 
-    <a class="sub" href="{% url 'mission:gallery' %}">
-        <img class="circlephoto" src="{% static 'media/images/general/performers.jpg'%}" alt="Performers with the YFF banner">
-        Gallery
-    </a>
+        <p>We are also regular participants at the Lyme Regis Fossil Festival, the largest event of 
+            its kind in the UK. At these festivals, we engage in Earth Science edutainment, with
+             hands-on displays and performances through The Rock Showman’s Booth.</p>
+
+        <p>Through these events, we have built an extensive network of people and institutions 
+            involved in Earth Science outreach across the UK, and we continue to be active in the 
+            global Earth Science community. Our goal is to formalise this network into a Registered 
+            Charity, bringing Earth Science to communities that lack access to these vital educational 
+            resources. See <a href="{% url 'mission:mission' %}">Our Mission</a> for more details.</p>
+
+        
+    </section>
+       
 </section>
 {% endblock %}
