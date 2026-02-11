@@ -248,7 +248,7 @@ section p {
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
 }
 
 .quote {
