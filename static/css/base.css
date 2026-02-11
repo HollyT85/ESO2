@@ -22,6 +22,19 @@ body {
     margin-bottom: 2rem; 
 }
 
+.page-images {
+    border-radius: 5%;
+    border: black 1px solid;
+}
+
+.mission-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;              /* space between items */
+    flex-wrap: wrap;        /* allows wrapping if needed */
+    margin-top: 2rem;
+    text-align: justify;
+}
 
 
 header {
