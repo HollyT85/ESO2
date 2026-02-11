@@ -2,16 +2,23 @@
 {% load static %}
 
 {% block content %}
-<div class="container"> 
-     <a href = "{% url 'team:team' %}"><i class="fa-solid fa-left-long"></i></a>
-<h1 class="headings">Patrons</h1>
-        <img src="{% static 'media/images/patron/chris-jackson-768x432.jpg' %}" 
-            alt="Professor Chris Jackson" class="img-fluid mb-3"/>
-        <p>
-            <a href="https://www.rigb.org/explore-science/explore/person/chris-jackson" target="_blank">
-                Professor Chris Jackson</a> is a volcanologist, seismologist and BBC presenter.  He is an advocate and role 
-            model for BAME scientists. Chris has agreed to help develop our charity and communicate our
-            aims to the wider public.
-        </p>
+<div class="container text-center"> 
+    <a href="{% url 'team:team' %}" class="d-block mb-3"><i class="fa-solid fa-left-long"></i> Back to Team</a>
+    
+    <h1 class="headings mb-4">Patrons</h1>
+
+    <div class="text-center mb-3">
+    <img src="{% static 'media/images/patron/chris-jackson-768x432.jpg' %}" 
+         alt="Professor Chris Jackson" class="img-fluid page-images"/>
+</div>
+
+
+    <p>
+        <a href="https://www.rigb.org/explore-science/explore/person/chris-jackson" target="_blank">
+            Professor Chris Jackson
+        </a> is a volcanologist, seismologist and BBC presenter. He is an advocate and role 
+        model for BAME scientists. Chris has agreed to help develop our charity and communicate our
+        aims to the wider public.
+    </p>
 </div>
 {% endblock %}
