@@ -99,5 +99,45 @@ footer {
 }
 
 .circlephoto {
-    
+    border-radius: 50%;
+    border: 1px black solid;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Goals section layout */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;              /* space between items */
+    flex-wrap: wrap;        /* allows wrapping if needed */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Remove default paragraph spacing */
+section p {
+    margin: 0;
+}
+
+/* Make links stack image above text */
+.sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 1rem;              /* space between image and heading text */
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub {
+        margin-bottom: 2rem;  /* space between stacked items */
+    }
 }
