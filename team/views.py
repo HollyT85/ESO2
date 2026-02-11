@@ -8,3 +8,7 @@ def team(request):
 def memoriam(request):
     """memoriam page view"""
     return render(request, 'team/memoriam.html')
+
+def trustees(request):
+    """trustee page view"""
+    return render(request, 'team/trustees.html')
