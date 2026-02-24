@@ -1,12 +1,60 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-<div class="container"> 
-    <a href = "{% url 'events:previous' %}"><i class="fa-solid fa-left-long"></i></a>
-<h1 class="headings">Redcar Kite Festival 2024</h1>
-<section>
+{% block title %}In Memoriam - ESO Project{% endblock %}
 
+{% block content %}
+<div class="container">
+    <a href = "{% url 'events:previous' %}"><i class="fa-solid fa-left-long"></i></a>
+    <h1 class="headings">Redcar Kite Festival</h1>
+    <div class="text-center mb-4">
+        <img class="d-block w-100 page-images" src="{% static 'media/images/redcar/1.JPG' %}" 
+             alt="Team at Redcar"/>
+           
+    </div>
+    <section class="photo-grid">
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/2.JPG' %}" alt="Event photo 1">
        
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/3.jpg' %}" alt="Event photo 2">
+        
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/4.jpg' %}" alt="Digging">
+        
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/5.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/6.jpeg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/7.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/8.jpeg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/9.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/redcar/10.jpeg' %}" alt="Event photo 3">
+
+    </div>
+
 </section>
+
+</div>
 {% endblock %}
