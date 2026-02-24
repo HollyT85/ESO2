@@ -5,10 +5,39 @@
 <div class="container"> 
     <a href = "{% url 'events:events' %}"><i class="fa-solid fa-left-long"></i></a>
 <h1 class="headings">Upcoming Events</h1>
-<section>
-<img src="{% static 'media/images/general/redcar.jpg' %}" class="d-block w-100 page-images">
-</section>
 <p class="mt-2">
-    Please check back soon to see what 2026 is going to take us!
+    Join us at our upcoming events in 2026! We can't wait to see you!
 </p>
+
+<div class="trustee">
+        <img class="trusteephoto" src="{% static 'media/images/eventlogos/kitefest.jpg'%}" alt="Redcar Kite Festival Logo">
+        <div class="trustee-text">
+            <h3>Redcar Kite Festival 6-7th June 2026</h3>
+                        <p>Please check back for more information.</p>
+
+        </div>
+    </div>
+
+    <div class="trustee reverse">
+        <img class="trusteephoto" src="{% static 'media/images/eventlogos/staithesarrts.jpg'%}" alt="Staithes Arts Festival Logo">
+        <div class="trustee-text">
+            <h3>Staithes Arts Festival 12-13th September 2026</h3>
+            <p>Please check back for more information.</p>
+    </div>
+    </div>
+
+    <div class="trustee">
+        <img class="trusteephoto" src="{% static 'media/images/eventlogos/geoasso.jpg'%}" alt="Geology Assosciation Logo">
+        <div class="trustee-text">
+            <h3>Geology Assosciation Conference in York 26-27th September 2026</h3>
+                        <p>Please check back for more information.</p>
+
+        </div>
+    </div>
+
+
+    
+
+    
+
 {% endblock %}
