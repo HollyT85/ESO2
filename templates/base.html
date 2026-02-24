@@ -80,7 +80,7 @@
           <a class="nav-link" href="{% url 'team:memoriam' %}">In Memoriam</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'events:events' %}">Events & Gallery</a>
+          <a class="nav-link" href="{% url 'events:events' %}">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'contact:contact' %}">Contact Us</a>
@@ -101,28 +101,31 @@
         {% endblock %}
     </main>
 
-    <div class="bottom-nav">
-            <p class="m-0">
-                Social Media
-                <br>
-                <a href="" target="_blank"><i class="fas fa fa-twitter text-blue"></i></a>
-                <br>
-                <a href="" target="_blank"><i class="fas fa fa-facebook text-blue"></i></a>
-            </p>
-        </div>
-        <div class="col-4">
-         
-          <a class="nav-link" href="{% url 'safeguarding:safeguarding' %}">Safeguarding</a>
-         
-        </div>
-        <div class="col-4">
-            <p class="m-0 text-center text-white">
-             
-            </p>
-        </div>
-    </footer>
+   <footer>
+    <div class="container">
+        <div class="row align-items-center">
 
+            <!-- Left Column -->
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-1">Follow Us</p>
+                <a href="#" class="me-3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
 
+            <!-- Right Column -->
+            <div class="col-md-6 text-center text-md-end">
+                <a href="{% url 'safeguarding:safeguarding' %}">
+                    Safeguarding
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
     <script src="/static/js/main.js">
         // $('a[href="' + this.location.pathname + '"]').parents('li,ul').addClass('active');
     </script>

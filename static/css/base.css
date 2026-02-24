@@ -83,7 +83,7 @@ ul li a:hover{
 }
 
 .bottom-nav {
-    background-color: #6287A2;
+    /* background-color: #6287A2; */
     color: #5EC0CA;
     padding: 0.5rem;
     text-align: center;
@@ -111,11 +111,24 @@ main {
 }
 
 footer {
-    background-color: #34495e;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    background-color: #6287A2;
+    color: #5EC0CA;
+    padding: 1.5rem 0;
+    font-family: "Indie Flower", cursive;
+}
+
+footer a {
+    color: #5EC0CA;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #CE8F5A;
+}
+
+footer i {
+    font-size: 1.4rem;
 }
 
 .active{
