@@ -37,6 +37,10 @@ body {
     text-align: justify;
 }
 
+.logo {
+    max-width: 6rem;
+    max-height: 6rem;
+}
 
 header {
     background-color: #6287A2;
