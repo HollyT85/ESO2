@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-your-secret-key-here-change-in-production'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['earthscienceoutreach.org.uk']
+ALLOWED_HOSTS = ['earthscienceoutreach.org.uk', 'earth-science-outreach-ea452002f21c.herokuapp.com/']
 
 
 # Application definition
