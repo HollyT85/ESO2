@@ -1,0 +1,289 @@
+/* ESO Project Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", system-ui, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F6F1E8;  /* soft cream */
+    text-align: justify;
+}
+
+.custom-navbar {
+    background-color: #6287A2 !important;
+}
+
+/* Home page carousel spacing */
+#carouselExample {
+    margin-bottom: 2rem; 
+}
+
+.page-images {
+    border-radius: 5%;
+    border: black 1px solid;
+}
+
+.mission-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;              /* space between items */
+    flex-wrap: wrap;        /* allows wrapping if needed */
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.logo {
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+header {
+    background-color: #6287A2;
+    color: white;
+    padding: 1rem;
+}
+
+h1 .navbar-brand{
+    font-size: 3rem;
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    color: #80C8BC !important
+    }
+
+h1 .navbar-brand:hover{
+    color: #5EC0CA !important
+}
+
+.fa-hill-rockslide {
+    color: #EFD199 !important;
+}
+
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    text-decoration: none !important;
+    color: #EFD199 !important;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #CE8F5A !important;
+}
+
+/* .navbar-nav .nav-link.active {
+    color: pink !important;
+    font-weight: bold;
+} */
+
+ul li a:hover{
+    color: pink;
+}
+
+.bottom-nav {
+    /* background-color: #6287A2; */
+    color: #5EC0CA;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+
+}
+
+.bottom-nav a {
+    color: #5EC0CA;
+    text-decoration: none !important;
+}   
+
+.bottom-nav a:hover {
+    color:#CE8F5A;
+}
+
+main {
+    min-height: calc(100vh - 120px);
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #6287A2;
+    color: #5EC0CA;
+    padding: 1.5rem 0;
+    font-family: "Indie Flower", cursive;
+}
+
+footer a {
+    color: #5EC0CA;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #CE8F5A;
+}
+
+footer i {
+    font-size: 1.4rem;
+}
+
+.active{
+    color: pink;
+    font-weight: bold;
+}
+
+.circlephoto {
+    border-radius: 50%;
+    border: 1px black solid;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Goals section layout */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;              /* space between items */
+    flex-wrap: wrap;        /* allows wrapping if needed */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Remove default paragraph spacing */
+section p {
+    margin: 0;
+}
+
+/* Make links stack image above text */
+.sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 1rem;              /* space between image and heading text */
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub {
+        margin-bottom: 2rem;  /* space between stacked items */
+    }
+}
+
+.carousel-item img {
+    border-radius: 5%;
+    border: black 1px solid;
+}
+
+/* Trustee Layout */
+.trustee {
+    display: flex;
+    align-items: center;      /* vertically center the image and text */
+    justify-content: center;   /* horizontally center content in the section */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;      /* space before bottom border */
+    border-bottom: 2px solid black;  /* black line under each trustee */
+}
+
+/* Alternate layout */
+.trustee.reverse {
+    flex-direction: row-reverse;
+}
+
+.headings {
+    font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color:#5EC0CA;
+  text-align: center;
+}
+
+.trusteephoto {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* center image in mobile view */
+    border: black 1px solid;
+}
+
+.trustee-text {
+    max-width: 700px;
+}
+
+.trustee-text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.trustee-text .title {
+    margin-bottom: 1rem;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .trustee,
+    .trustee.reverse {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .trustee-text {
+        max-width: 100%;
+    }
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.photo-card {
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.quote {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
