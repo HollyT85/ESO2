@@ -1,7 +1,7 @@
 deployment:
   tasks:
     - echo "Starting deployment..."
-    - export DEPLOYPATH=/home/earthsci/repositories/ESO2
+    - export DEPLOYPATH=/home/earthsci/public_html/repositories/ESO2
     - /bin/rsync -av --exclude='.git' ./ $DEPLOYPATH
     - cd $DEPLOYPATH
     - echo "Installing requirements (system Python)..."
