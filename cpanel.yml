@@ -1,0 +1,15 @@
+deployment:
+  tasks:
+    - echo "Starting deployment..."
+    - export DEPLOYPATH=/home/earthsci/repositories/ESO2
+    - /bin/rsync -av --exclude='.git' ./ $DEPLOYPATH
+    - cd $DEPLOYPATH
+    - echo "Activating virtual environment..."
+    - source /home/earthsci/virtualenv/public_html/repositories/ESO2/3.11/bin/activate
+    - echo "Installing requirements..."
+    - pip install -r requirements.txt
+    - echo "Running migrations..."
+    - python manage.py migrate
+    - echo "Collecting static files..."
+    - python manage.py collectstatic --noinput
+    - echo "Deployment completed!"
