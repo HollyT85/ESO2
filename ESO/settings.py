@@ -4,7 +4,7 @@ Django settings for ESO project.
 
 from pathlib import Path
 import os
-import dj_database_url
+# import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -19,7 +19,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'earthscienceoutreach.org.uk',
-    'earth-science-outreach-ea452002f21c.herokuapp.com',
 ]
 
 
