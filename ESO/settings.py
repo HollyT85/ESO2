@@ -5,21 +5,26 @@ Django settings for ESO project.
 from pathlib import Path
 import os
 # import dj_database_url
+from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
+
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'earthscienceoutreach.org.uk',
-    'www.earthscienceoutreach.org.uk'
+    'www.earthscienceoutreach.org.uk',
+    'organic-goggles-677jj66j5vw3rqxj-8000.app.github.dev',
+    'localhost'
 ]
 
 
