@@ -1,6 +1,6 @@
 {
 	"name": "ESO2",
-	"image": "mcr.microsoft.com/devcontainers/python:3.12",
+	"image": "mcr.microsoft.com/devcontainers/python:3.11",
 	"workspaceFolder": "/workspaces/ESO2",
 	"postCreateCommand": "pip install -r requirements.txt",
 	"customizations": {
