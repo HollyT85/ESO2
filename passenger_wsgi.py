@@ -2,7 +2,7 @@ import os
 import sys
 
 # Add your project parent folder to the Python path
-sys.path.insert(0, '/home/earthsci/public_html/ESO2')
+sys.path.insert(0, '/home/earthsci/public_html/repositories/ESO2')
 
 # Tell Django where your settings are
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ESO.settings')
