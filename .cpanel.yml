@@ -1,9 +1,9 @@
 ---
 deployment:
   tasks:
-    # Set paths
+    # Paths
     - export DEPLOYPATH=/home/earthsci/public_html
-    - export REPOPATH=/home/earthsci/repositories/ESO2
+    - export REPOPATH=/home/earthsci/public_html/repositories/ESO2
 
     # Remove old backup if exists
     - /bin/rm -Rf "${DEPLOYPATH}_old"
