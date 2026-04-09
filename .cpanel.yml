@@ -1,0 +1,18 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/earthsci/public_html
+    - export REPOPATH=/home/earthsci/repositories/ESO2
+
+    # Remove old backup
+    - /bin/rm -Rf "${DEPLOYPATH}_old"
+
+    # Backup current site
+    - /bin/rsync -a ${DEPLOYPATH}/ ${DEPLOYPATH}_old/
+
+    # Deploy new version
+    - /bin/rsync -a --delete-after --exclude='.git' --exclude='.well-known' ${REPOPATH}/ ${DEPLOYPATH}/
+
+    # Fix permissions
+    - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 {} \;
+    - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 {} \;
