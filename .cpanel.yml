@@ -4,27 +4,29 @@ deployment:
     # Paths
     - export DEPLOYPATH=/home/earthsci/public_html
     - export REPOPATH=/home/earthsci/public_html/repositories/ESO2
+    - export NEWPATH=/home/earthsci/public_html_new
 
-    # Remove old backup if exists
-    - /bin/rm -Rf "${DEPLOYPATH}_old"
+    # Clean previous temp deploy
+    - /bin/rm -Rf "${NEWPATH}"
 
-    # Backup current site
-    - /bin/rsync -a ${DEPLOYPATH}/ ${DEPLOYPATH}_old/
+    # Copy repo to new location (no delete needed here)
+    - /bin/rsync -a --exclude='.git' --exclude='.well-known' ${REPOPATH}/ ${NEWPATH}/
 
-    # Deploy new version (exclude .git and SSL .well-known)
-    - /bin/rsync -a --delete-after --exclude='.git' --exclude='.well-known' ${REPOPATH}/ ${DEPLOYPATH}/
-
-    # Enter app directory
-    - cd ${DEPLOYPATH}
-
-    # Install Python dependencies in virtualenv
-    - /home/earthsci/virtualenv/public_html/3.11/bin/pip install -r requirements.txt
+    # Install Python dependencies
+    - /home/earthsci/virtualenv/public_html/3.11/bin/pip install -r ${NEWPATH}/requirements.txt
 
     # Run Django migrations
-    - /home/earthsci/virtualenv/public_html/3.11/bin/python manage.py migrate
+    - /home/earthsci/virtualenv/public_html/3.11/bin/python ${NEWPATH}/manage.py migrate
 
-    # Collect static files for WhiteNoise
-    - /home/earthsci/virtualenv/public_html/3.11/bin/python manage.py collectstatic --noinput
+    # Collect static files
+    - /home/earthsci/virtualenv/public_html/3.11/bin/python ${NEWPATH}/manage.py collectstatic --noinput
+
+    # Backup current site
+    - /bin/rm -Rf "${DEPLOYPATH}_old"
+    - /bin/mv ${DEPLOYPATH} ${DEPLOYPATH}_old
+
+    # Switch new version live
+    - /bin/mv ${NEWPATH} ${DEPLOYPATH}
 
     # Fix permissions
     - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 {} \;
