@@ -1,14 +1,14 @@
-# import os
-# import sys
+import os
+import sys
 
-# sys.path.insert(0, '/home/earthsci/public_html/ESO2')
+sys.path.insert(0, '/home/earthsci/public_html/ESO2')
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ESO.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ESO.settings')
 
-# from django.core.wsgi import get_wsgi_application
+from django.core.wsgi import get_wsgi_application
 
-# application = get_wsgi_application()
+application = get_wsgi_application()
 
-def application(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/plain')])
-    return [b"HELLO FROM PASSENGER"]
+# def application(environ, start_response):
+#     start_response('200 OK', [('Content-Type', 'text/plain')])
+#     return [b"HELLO FROM PASSENGER"]
