@@ -33,7 +33,7 @@ body {
 
 .mission-section {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 2rem;              /* space between items */
     flex-wrap: wrap;        /* allows wrapping if needed */
     margin-top: 2rem;
