@@ -24,3 +24,7 @@ def staithes(request):
 def redcar(request):
     """Events page view"""
     return render(request, 'events/redcar.html')
+
+def scarb(request):
+    """Scarborough FF page view"""
+    return render(request, 'events/scarb.html')

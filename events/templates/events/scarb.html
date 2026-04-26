@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Scarborough Fossil Festival{% endblock %}
+
+{% block content %}
+<a href = "{% url 'events:previous' %}"><i class="fa-solid fa-left-long"></i></a>
+<h1>Yorkshire Fossil Festival - Scarborough 2022</h1>
+    <div class="text-center mb-4">
+        <p class="mission-section"> The year we took over Scarborough Spa, put a pop-up Dinosaur museum on Scarborough High Street AND sent a dinosaur cart down to the beach! 
+</p>
+        <img class="d-block w-100 page-images" src="{% static 'media/images/scarfoss/1.jpg' %}" 
+             alt="Performers at Scarborough"/>
+           
+    </div>
+    <section class="photo-grid">
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/11.jpg' %}" alt="Event photo 1">
+       
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/3.jpg' %}" alt="Event photo 2">
+        
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/4.jpg' %}" alt="Digging">
+        
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/5.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/6.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/7.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/8.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/9.jpg' %}" alt="Event photo 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'media/images/scarfoss/10.jpg' %}" alt="Event photo 3">
+
+    </div>
+
+</section>
+
+</div>
+{% endblock %}

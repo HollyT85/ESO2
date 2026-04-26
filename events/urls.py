@@ -13,7 +13,7 @@ urlpatterns = [
     path('fossilfest', views.fossilfest, name='fossilfest'),
     path('staithes', views.staithes, name='staithes'),
     path('redcar', views.redcar, name='redcar'),
-
+    path('scarb', views.scarb, name='scarb'),
 
 
 ]
