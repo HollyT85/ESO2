@@ -21,10 +21,7 @@ body {
     background-color: #6287A2 !important;
 }
 
-/* Home page carousel spacing */
-#carouselExample {
-    margin-bottom: 2rem; 
-}
+
 
 .page-images {
     border-radius: 5%;
@@ -187,9 +184,21 @@ section p {
     }
 }
 
-.carousel-item img {
+#carouselExample {
+    max-width: 1000px;   /* optional */
+    margin: 0 auto 2rem auto;
+}
+
+#carouselExample .carousel-item {
+    height: 500px;   /* fixed carousel height */
+}
+
+#carouselExample .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   /* crops neatly instead of stretching */
     border-radius: 5%;
-    border: black 1px solid;
+    border: 1px solid black;
 }
 
 /* Trustee Layout */
