@@ -217,6 +217,14 @@ section p {
     flex-direction: row-reverse;
 }
 
+.video {
+     max-width: 900px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5%;
+    overflow: hidden; 
+}
+
 .headings {
     font-family: "Rubik Dirt", system-ui;
   font-weight: 400;
