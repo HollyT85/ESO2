@@ -1,7 +1,7 @@
 import os
 import sys
 
-sys.path.insert(0, '/home/earthsci/public_html/ESO')
+sys.path.insert(0, '/home/earthsci/public_html/ESO2')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ESO.settings')
 
