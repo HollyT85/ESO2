@@ -18,7 +18,7 @@ body {
 }
 
 .custom-navbar {
-    background-color: #6287A2 !important;
+    background-color: #93C2E3 !important;
 }
 
 
@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    background-color: #6287A2;
+    background-color: #93C2E3;
     color: white;
     padding: 1rem;
 }
@@ -88,7 +88,7 @@ ul li a:hover{
 
 .bottom-nav {
     /* background-color: #6287A2; */
-    color: #5EC0CA;
+    color: #93C2E3;
     padding: 0.5rem;
     text-align: center;
     font-family: "Indie Flower", cursive;
