@@ -1,18 +1,16 @@
-/* ESO Project Styles - Unified Orange/Yellow Gradient Theme */
+/* ESO Project Styles - Orangey Gradient Navbar and Footer */
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: "Rubik", system-ui, sans-serif;
     line-height: 1.6;
-    color: #4E342E;           /* dark brown for contrast */
-    background-color: #FFF3E0; /* light cream for readability */
+    color: #2E2E2E;                 /* dark text for readability */
+    background-color: #FFF3E0;      /* soft orangey cream background */
     text-align: justify;
 }
 
@@ -20,71 +18,102 @@ body {
     margin-right: 20px;
 }
 
-/* Gradient Colors */
+/* Define your custom orangey gradient */
 :root {
     --eso-gradient: linear-gradient(to bottom, #FF7043, #FFD54F); /* top orange → bottom yellow */
-    --eso-text: #FFF59D;  /* bright yellow text */
-    --eso-hover: #FF5722; /* red-orange hover */
-    --eso-accent: #FF8A65; /* medium orange for accents/borders */
 }
 
-/* NAVBAR */
+/* Navbar (taller) */
 nav.custom-navbar {
     background-image: var(--eso-gradient) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     border-bottom: none;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
+    padding-top: 1.5rem;    /* taller navbar */
+    padding-bottom: 1.5rem;
 }
 
+/* Navbar inner containers transparent so gradient shows */
 nav.custom-navbar .container-fluid,
 nav.custom-navbar .navbar-collapse {
     background: transparent !important;
 }
 
+/* Navbar text and hover colors */
 nav.custom-navbar .navbar-brand,
 nav.custom-navbar .nav-link {
-    color: var(--eso-text) !important;
+    color: #FFF59D !important;  /* bright yellow text */
     font-family: "Indie Flower", cursive;
+    font-size: 1.6rem;           /* larger font */
+    margin-right: 1rem;
 }
 
 nav.custom-navbar .nav-link:hover {
-    color: var(--eso-hover) !important;
+    color: #FF8F00 !important;   /* bright orange hover */
 }
 
+/* Navbar toggler icon */
 .navbar-toggler {
-    border-color: var(--eso-text) !important;
-}
-
-nav.custom-navbar .navbar-brand {
-    font-size: 2.2rem; /* larger brand/logo text */
-}
-
-nav.custom-navbar .nav-link {
-    font-size: 1.8rem; /* larger link text */
+    border-color: #FFF59D !important;
 }
 
 .navbar-toggler-icon {
     background-image: none;
-    color: var(--eso-text);
+    color: #FFF59D;
     font-size: 1.2rem;
 }
 
-nav.custom-navbar .navbar-brand img.logo {
-    max-height: 80px;
-}
-
-/* HEADINGS */
-.headings {
-    font-family: "Rubik Dirt", system-ui;
-    font-weight: 400;
+h1 .navbar-brand {
+    font-size: 3rem;
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
     font-style: normal;
-    color: #FF5722; /* bright orange headings */
-    text-align: center;
+    color: #FFF59D !important;
 }
 
-/* MAIN CONTENT */
+h1 .navbar-brand:hover {
+    color: #FFD54F !important;
+}
+
+.fa-hill-rockslide {
+    color: #FFB74D !important;
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    text-decoration: none !important;
+    color: #FFF59D !important;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8F00 !important;
+}
+
+/* Bottom nav (if used) */
+.bottom-nav {
+    color: #FF7043;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+}
+
+.bottom-nav a {
+    color: #FF8F00;
+    text-decoration: none !important;
+}
+
+.bottom-nav a:hover {
+    color: #FFD54F;
+}
+
+/* Page content images & borders */
+.page-images, .circlephoto, .trusteephoto, .photo-card img, .video {
+    border-radius: 5%;
+    border: 1px solid #A1887F;
+}
+
 main {
     min-height: calc(100vh - 120px);
     padding: 2rem;
@@ -95,58 +124,100 @@ main {
     margin: 0 auto;
 }
 
-/* FOOTER */
+/* Footer matches navbar gradient */
 footer {
     background-image: var(--eso-gradient);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: var(--eso-text);
+    color: #FFF59D !important;
     padding: 1.5rem 0;
-    font-family: "Indie Flower", cursive;
+    font-family: "Rubik", system-ui, sans-serif;
     text-align: center;
 }
 
 footer a {
-    color: var(--eso-text);
+    color: #FFF59D !important;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 footer a:hover {
-    color: var(--eso-hover);
+    color: #FF8F00;
 }
 
 footer i {
     font-size: 1.4rem;
 }
 
-/* Active link styling */
 .active {
     color: #FFD54F;
     font-weight: bold;
 }
 
-/* Sections */
-section,
+/* Headings */
+.headings {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF7043; /* bright orange headings */
+    text-align: center;
+}
+
+/* Mission Section layout */
 .mission-section {
     display: flex;
+    justify-content: left;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.logo {
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+/* Circle photo */
+.circlephoto {
+    border-radius: 50%;
+    border: 1px solid #A1887F;
+    width: 10rem;
+    height: 10rem;
+    font-family: "Rubik", system-ui, sans-serif; /* ensure correct font */
+}
+
+/* Goals section layout */
+section {
+    display: flex;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
     text-align: center;
     margin-top: 2rem;
 }
 
-/* Mission Section */
-.mission-section {
-    justify-content: left;
+section p {
+    margin: 0;
 }
 
-/* Circle Photos */
-.circlephoto {
-    border-radius: 50%;
-    border: 2px solid var(--eso-accent);
-    width: 10rem;
-    height: 10rem;
+.sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 1rem;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Carousel */
@@ -164,7 +235,7 @@ section,
     width: 100%;
     object-fit: cover;
     border-radius: 5%;
-    border: 2px solid var(--eso-accent);
+    border: 1px solid #A1887F;
 }
 
 /* Trustee Layout */
@@ -175,11 +246,19 @@ section,
     gap: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid var(--eso-accent);
+    border-bottom: 2px solid #A1887F;
 }
 
 .trustee.reverse {
     flex-direction: row-reverse;
+}
+
+.video {
+    max-width: 900px;
+    width: 100%;
+    border: 1px solid #A1887F;
+    border-radius: 5%;
+    overflow: hidden; 
 }
 
 .trusteephoto {
@@ -188,7 +267,8 @@ section,
     border-radius: 10px;
     display: block;
     margin: 0 auto;
-    border: 2px solid var(--eso-accent);
+    border: 1px solid #A1887F;
+    font-family: "Rubik", system-ui, sans-serif; /* ensure correct font */
 }
 
 .trustee-text {
@@ -197,20 +277,24 @@ section,
 
 .trustee-text h3 {
     margin-bottom: 0.5rem;
-    color: #FF5722;
 }
 
 .trustee-text .title {
     margin-bottom: 1rem;
 }
 
-/* Video */
-.video {
-    max-width: 900px;
-    width: 100%;
-    border: 2px solid var(--eso-accent);
-    border-radius: 5%;
-    overflow: hidden; 
+/* Mobile trustee layout */
+@media (max-width: 768px) {
+    .trustee,
+    .trustee.reverse {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .trustee-text {
+        max-width: 100%;
+    }
 }
 
 /* Photo Grid */
@@ -231,39 +315,20 @@ section,
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    border: 2px solid var(--eso-accent);
+    border: 1px solid #A1887F;
+    font-family: "Rubik", system-ui, sans-serif; /* ensure correct font */
 }
 
 .quote {
     margin-top: 1rem;
     font-style: italic;
-    color: #FF7043;
+    color: #555;
 }
 
-/* Responsive */
+/* Responsive photo grid */
 @media (max-width: 992px) {
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    section,
-    .mission-section {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sub {
-        margin-bottom: 2rem;
-    }
-    .trustee,
-    .trustee.reverse {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .trustee-text {
-        max-width: 100%;
     }
 }
 
