@@ -1,109 +1,90 @@
-/* ESO Project Styles */
+/* ESO Project Styles - Unified Orange/Yellow Gradient Theme */
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: "Rubik", system-ui, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #F6F1E8;  /* soft cream */
+    color: #4E342E;           /* dark brown for contrast */
+    background-color: #FFF3E0; /* light cream for readability */
     text-align: justify;
 }
+
 .margin-right {
     margin-right: 20px;
 }
 
-.custom-navbar {
-    background-color: #93C2E3 !important;
+/* Gradient Colors */
+:root {
+    --eso-gradient: linear-gradient(to bottom, #FF7043, #FFD54F); /* top orange → bottom yellow */
+    --eso-text: #FFF59D;  /* bright yellow text */
+    --eso-hover: #FF5722; /* red-orange hover */
+    --eso-accent: #FF8A65; /* medium orange for accents/borders */
 }
 
-
-
-.page-images {
-    border-radius: 5%;
-    border: black 1px solid;
+/* NAVBAR */
+nav.custom-navbar {
+    background-image: var(--eso-gradient) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-bottom: none;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
 }
 
-.mission-section {
-    display: flex;
-    justify-content: left;
-    gap: 2rem;              /* space between items */
-    flex-wrap: wrap;        /* allows wrapping if needed */
-    margin-top: 2rem;
-    text-align: justify;
+nav.custom-navbar .container-fluid,
+nav.custom-navbar .navbar-collapse {
+    background: transparent !important;
 }
 
-.logo {
-    max-width: 6rem;
-    max-height: 6rem;
-}
-
-header {
-    background-color: #93C2E3;
-    color: white;
-    padding: 1rem;
-}
-
-h1 .navbar-brand{
-    font-size: 3rem;
+nav.custom-navbar .navbar-brand,
+nav.custom-navbar .nav-link {
+    color: var(--eso-text) !important;
     font-family: "Indie Flower", cursive;
-    font-weight: 1000;
+}
+
+nav.custom-navbar .nav-link:hover {
+    color: var(--eso-hover) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--eso-text) !important;
+}
+
+nav.custom-navbar .navbar-brand {
+    font-size: 2.2rem; /* larger brand/logo text */
+}
+
+nav.custom-navbar .nav-link {
+    font-size: 1.8rem; /* larger link text */
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    color: var(--eso-text);
+    font-size: 1.2rem;
+}
+
+nav.custom-navbar .navbar-brand img.logo {
+    max-height: 80px;
+}
+
+/* HEADINGS */
+.headings {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
     font-style: normal;
-    color: #80C8BC !important
-    }
-
-h1 .navbar-brand:hover{
-    color: #5EC0CA !important
-}
-
-.fa-hill-rockslide {
-    color: #EFD199 !important;
-}
-
-
-/* Navbar link styles */
-.navbar-nav .nav-link {
-    text-decoration: none !important;
-    color: #EFD199 !important;
-    font-family: "Indie Flower", cursive;
-    font-size: 1.5rem;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #CE8F5A !important;
-}
-
-/* .navbar-nav .nav-link.active {
-    color: pink !important;
-    font-weight: bold;
-} */
-
-ul li a:hover{
-    color: pink;
-}
-
-.bottom-nav {
-    /* background-color: #6287A2; */
-    color: #93C2E3;
-    padding: 0.5rem;
+    color: #FF5722; /* bright orange headings */
     text-align: center;
-    font-family: "Indie Flower", cursive;
-
 }
 
-.bottom-nav a {
-    color: #5EC0CA;
-    text-decoration: none !important;
-}   
-
-.bottom-nav a:hover {
-    color:#CE8F5A;
-}
-
+/* MAIN CONTENT */
 main {
     min-height: calc(100vh - 120px);
     padding: 2rem;
@@ -114,123 +95,91 @@ main {
     margin: 0 auto;
 }
 
+/* FOOTER */
 footer {
-    background-color: #6287A2;
-    color: #5EC0CA;
+    background-image: var(--eso-gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--eso-text);
     padding: 1.5rem 0;
     font-family: "Indie Flower", cursive;
+    text-align: center;
 }
 
 footer a {
-    color: #5EC0CA;
+    color: var(--eso-text);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 footer a:hover {
-    color: #CE8F5A;
+    color: var(--eso-hover);
 }
 
 footer i {
     font-size: 1.4rem;
 }
 
-.active{
-    color: pink;
+/* Active link styling */
+.active {
+    color: #FFD54F;
     font-weight: bold;
 }
 
-.circlephoto {
-    border-radius: 50%;
-    border: 1px black solid;
-    width: 10rem;
-    height: 10rem;
-}
-
-/* Goals section layout */
-section {
+/* Sections */
+section,
+.mission-section {
     display: flex;
-    justify-content: center;
-    gap: 2rem;              /* space between items */
-    flex-wrap: wrap;        /* allows wrapping if needed */
+    gap: 2rem;
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 2rem;
 }
 
-/* Remove default paragraph spacing */
-section p {
-    margin: 0;
+/* Mission Section */
+.mission-section {
+    justify-content: left;
 }
 
-/* Make links stack image above text */
-.sub {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    gap: 1rem;              /* space between image and heading text */
+/* Circle Photos */
+.circlephoto {
+    border-radius: 50%;
+    border: 2px solid var(--eso-accent);
+    width: 10rem;
+    height: 10rem;
 }
 
-/* Mobile layout */
-@media (max-width: 768px) {
-    section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sub {
-        margin-bottom: 2rem;  /* space between stacked items */
-    }
-}
-
+/* Carousel */
 #carouselExample {
-    max-width: 1000px;   /* optional */
+    max-width: 1000px;
     margin: 0 auto 2rem auto;
 }
 
 #carouselExample .carousel-item {
-    height: 500px;   /* fixed carousel height */
+    height: 500px;
 }
 
 #carouselExample .carousel-item img {
     height: 100%;
     width: 100%;
-    object-fit: cover;   /* crops neatly instead of stretching */
+    object-fit: cover;
     border-radius: 5%;
-    border: 1px solid black;
+    border: 2px solid var(--eso-accent);
 }
 
 /* Trustee Layout */
 .trustee {
     display: flex;
-    align-items: center;      /* vertically center the image and text */
-    justify-content: center;   /* horizontally center content in the section */
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
-    padding-bottom: 2rem;      /* space before bottom border */
-    border-bottom: 2px solid black;  /* black line under each trustee */
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--eso-accent);
 }
 
-/* Alternate layout */
 .trustee.reverse {
     flex-direction: row-reverse;
-}
-
-.video {
-     max-width: 900px;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 5%;
-    overflow: hidden; 
-}
-
-.headings {
-    font-family: "Rubik Dirt", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  color:#5EC0CA;
-  text-align: center;
 }
 
 .trusteephoto {
@@ -238,8 +187,8 @@ section p {
     height: auto;
     border-radius: 10px;
     display: block;
-    margin: 0 auto; /* center image in mobile view */
-    border: black 1px solid;
+    margin: 0 auto;
+    border: 2px solid var(--eso-accent);
 }
 
 .trustee-text {
@@ -248,24 +197,20 @@ section p {
 
 .trustee-text h3 {
     margin-bottom: 0.5rem;
+    color: #FF5722;
 }
 
 .trustee-text .title {
     margin-bottom: 1rem;
 }
 
-/* Mobile layout */
-@media (max-width: 768px) {
-    .trustee,
-    .trustee.reverse {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .trustee-text {
-        max-width: 100%;
-    }
+/* Video */
+.video {
+    max-width: 900px;
+    width: 100%;
+    border: 2px solid var(--eso-accent);
+    border-radius: 5%;
+    overflow: hidden; 
 }
 
 /* Photo Grid */
@@ -286,19 +231,39 @@ section p {
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid var(--eso-accent);
 }
 
 .quote {
     margin-top: 1rem;
     font-style: italic;
-    color: #555;
+    color: #FF7043;
 }
 
 /* Responsive */
 @media (max-width: 992px) {
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section,
+    .mission-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub {
+        margin-bottom: 2rem;
+    }
+    .trustee,
+    .trustee.reverse {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .trustee-text {
+        max-width: 100%;
     }
 }
 
